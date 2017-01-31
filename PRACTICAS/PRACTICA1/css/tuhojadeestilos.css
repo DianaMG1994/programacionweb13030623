@@ -1,0 +1,21 @@
+/*selector {
+a++:valor;
+}
+*/
+h1{
+	font-size:40px;
+	color:red;
+}
+/*css 
+#=id
+.=clase*/
+#titulo{
+	background-color:black;
+	color:white;
+}
+.colorRojo{
+	color:red;
+}
+.colorAmarillo{
+	color:yellow;
+}
