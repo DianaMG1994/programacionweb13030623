@@ -7,6 +7,41 @@ body{
 	line-height: 1.4px;
 	font:16px Helvetica;
 }
+h1
+{
+	font-family: 'Indie Flower', cursive;
+}
+h2
+{
+	font-family: 'Indie Flower', cursive;
+font-family: 'Muli', sans-serif
+}
+h3
+{
+	font-family: 'Indie Flower', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Arvo', serif;
+}
+h2
+{
+	border:dashed 5px #000000;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+h1
+{
+background-color: rgba(215, 40, 40, 0.9);
+background: rgba(215, 40, 40, 0.9);
+color: rgba(215, 40, 40, 0.9);
+}
+h3
+{
+text-shadow:5px 5px 5px #000000;
+}
+
+
+
 hr{
 	display:block;
 	height: 1px;
