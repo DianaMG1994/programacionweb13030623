@@ -18,7 +18,43 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+<!--Menu arriba de pagina -->
+    <ol class="breadcrumb">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Library</a></li>
+         <li class="active">Data</li>
+    </ol>
+
+      <!--Insignias -->
+      <a href="#">Inbox <span class="badge">42</span></a>
+
+          <button class="btn btn-primary" type="button">
+           Messages <span class="badge">4</span>
+      </button>
+
+
+ <!--Para insertar correo -->
+
+    </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+      </div>
+
+      <div class="input-group">
+       <span class="input-group-addon" id="sizing-addon2">@</span>
+       <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+      </div>
+
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon" id="sizing-addon3">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+      </div>
+
+
+
+  <h1>Hello, world!</h1>
 
     <div class="container">
 
@@ -31,10 +67,52 @@
             <div class="col-md-9">
                 <p>menu</p>
             </div>
-        </div>
-       
+         </div>
 
-        <div class="row">
+<!--Alerts -->
+<div class="alert alert-success" role="alert">...</div>
+<div class="alert alert-info" role="alert">...</div>
+<div class="alert alert-warning" role="alert">...</div>
+<div class="alert alert-danger" role="alert">...</div>
+
+<!-- Page header-->
+      <div class="page-header">
+               <h1>Example page header <small>Subtext for header</small></h1>
+             </div>
+
+
+             </div>
+      </div>
+
+<div class="row">
+            <div class="col-md-12">
+            <p>footer</p>
+            </div>
+           </div>
+      
+           </div>
+
+    <!--Progress bars -->
+               <div class="progress">
+               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                  <span class="sr-only">60% Complete</span>
+               </div>
+               </div>
+                 <!-- Media Object -->
+            <div class="media">
+               <div class="media-left media-middle">
+                 <a href="#">
+                     <img class="media-object" src="..." alt="...">
+                 </a>
+               </div>
+            <div class="media-body">
+            <h4 class="media-heading">Middle aligned media</h4>
+    ...
+</div>
+</div>
+
+
+ <div class="row">
              <div class="col-sm-6">
                  <p>article</p>
                    <div class="panel panel-primary">
@@ -45,9 +123,12 @@
                          xxx
                      </div>
                    </div>
-             </div>
-             <div class="col-sm-6">
-                 <p>aside</p>
+              </div>
+
+
+
+<div class="col-sm-6">
+        <p>aside</p>
                    <div class="panel panel-primary">
                      <div class="panel-heading">
                        <h3 class="panel-title">xxxx</h3>
@@ -55,18 +136,109 @@
                      <div class="panel-body">
                          xxx
                      </div>
-                   </div>
-             </div>
+
+<!--List Group -->
+       <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+       </ul>
+
+</div>
+
+
+<!--Jumbotron-->
+  <div class="jumbotron">
+     <h1>Hello, world!</h1>
+     <p>...</p>
+     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  </div>
+
+<!--menu desplegable -->
+
+          <div class="dropdown">
+               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Dropdown
+              <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              </ul>
+          </div>
+<!--botones-->
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-              <p>footer</p>
-            </div>
-        </div>
-      
+<!-- Boton simple-->
+    <div class="btn-group">
+         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+         </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+           </ul>
+
+
+
+<!--ETIQUETAS -->
+  
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+<!--Paginacion -->
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li> 
+  </ul>
+</nav>
+<!--Thumbnails -->
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
     </div>
+  </div>
+</div>
 
+
+<!-- wells -->
+<div class="well">HOLA MUNDO!!</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
