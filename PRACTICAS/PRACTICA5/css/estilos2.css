@@ -1,0 +1,56 @@
+h1
+{
+	font-family: Arial ;
+	font-size: 400%;
+	color: white;
+	text-align: center;	
+}
+.col-md-6 
+{
+	font-family: Arial ;
+	font-size: 150%;
+	color: white;
+	text-align: center;	
+}
+.panel-default
+{
+	font-family: Arial ;
+	font-size: 80%;
+	color: black;
+	text-align: left;	
+}
+h2
+{
+	font-family: Arial ;
+	font-size: 80%;
+	color: black;
+	text-align: center;
+}
+h3
+{
+	font-family: Arial ;
+	font-size: 150%;
+	color: black;
+	text-align: left;
+}
+.IniSes
+{
+	font-family: Arial ;
+	font-size: 80%;
+	color: white;
+	text-align: right;
+}
+.Regis
+{
+	font-family: Arial ;
+	font-size: 80%;
+	color: black;
+	text-align: right;
+}
+.Idiom
+{
+	font-family: Arial ;
+	font-size: 80%;
+	color: black;
+	text-align: center;
+}
