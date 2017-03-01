@@ -1,0 +1,41 @@
+body
+ {
+ 	background:url(../PRACTICA6/fondopagina.jpg);
+ }
+ .col-md-12
+ {
+ 	background:url(../PRACTICA6/fondoencabezado.jpg);
+ 	height="60px" width="60px";
+ }
+ br
+ {
+ 	background:#A0ABA1;
+ }
+ h1
+ {
+ 	font-family: Arial ;
+	font-size: 150%;
+	color:black;
+	text-align: center;	
+
+ }
+.row
+{
+	text-align: center;	
+
+}
+.row2
+{
+	text-align: left;	
+	background:#20951C;
+}
+.row3
+{
+	text-align: center;
+}
+.row4
+{
+	text-align: center;
+	font-family: Arial ;
+	color:black;
+}
