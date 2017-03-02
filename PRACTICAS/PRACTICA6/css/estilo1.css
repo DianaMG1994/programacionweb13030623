@@ -39,3 +39,31 @@ body
 	font-family: Arial ;
 	color:black;
 }
+.row5
+{
+	text-align: center;
+	font-family: Arial ;
+	color:black;
+}
+.row6
+{
+	text-align: left;
+	font-family: Arial ;
+	color:black;
+}
+.curPro
+{
+		text-align: center;
+		font-family: Arial ;
+		color:black;
+
+		
+}
+.Cuerpo
+{
+		background:##B8B2B2;
+}
+.PiedePag
+{
+	background-image: url("fondofinal.jpg")
+}
