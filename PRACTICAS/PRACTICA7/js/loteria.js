@@ -4,7 +4,8 @@
 
 var numero
 var cadena
-
+var contador1=0
+var contador2=1
 function fobjeto(nombre)
 {
 	return document.getElementById(nombre)
@@ -22,6 +23,12 @@ $(document).ready(
 	 			//$(this).show("fast");
 	 			
 	 			$(this).attr('src','frijol.png');
+	 		
+	 			contador1++;
+	 			if(contador1==9)
+	 			{
+	 				$("#myModal1").modal("show")
+	 			}
 	 		}
 	 	);
 	 $("#btn-reinciar").click(
@@ -33,9 +40,15 @@ $(document).ready(
 	 setInterval(
 	 	function()
 	 	{
-			numero=parseInt((Math.random()*10+1));
+			numero=parseInt((Math.random()*11+1));
 			cadena="loteria/"+numero;
 			$("#img1").attr("src",cadena+".jpg")
+			contador2++;
+			if(contador2==11)
+			{
+				$("#myModal2").modal("show")
+				clearInterval(interval);
+			}
 	 	}, 5000
 	 	);
 
