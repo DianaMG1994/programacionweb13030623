@@ -5,10 +5,7 @@
 var numero
 var cadena
 var contador1=0
-var contador2=0
-
-var arreglo=[]
-
+var contador2=1
 function fobjeto(nombre)
 {
 	return document.getElementById(nombre)
@@ -24,16 +21,15 @@ $(document).ready(
 	 			//$(this).width("20px");
 	 			//$(this).hide("slow");
 	 			//$(this).show("fast");
-
-				$(this).attr('src','frijol.png');
+	 			
+	 			$(this).attr('src','frijol.png');
 	 		
 	 			contador1++;
-	 		if(contador1==9)
+	 			if(contador1==9)
 	 			{
 	 				$("#myModal1").modal("show")
-
+	 			}
 	 		}
-	 	}
 	 	);
 	 $("#btn-reinciar").click(
  		function ()
@@ -41,34 +37,19 @@ $(document).ready(
  			$("img").show("fast");
  		}
 	 );
-	 interval=setInterval(
+	 setInterval(
 	 	function()
 	 	{
 			numero=parseInt((Math.random()*11+1));
-			
-				while(true)
-				{
-					if(arreglo[numero]==1)
-					{
-						numero=parseInt((Math.random()*11+1))
-					}
-					else
-					{
-						cadena="loteria/"+numero;
-						$("#img1").attr("src",cadena+".jpg")
-						break;
-					}
-				}
-				arreglo[numero]=1
-				contador2++;
-				if(contador2==11)
-				{
-					$("#myModal2").modal("show")
-					clearInterval(interval);
-				}
-
-			
-	 	}, 1500
+			cadena="loteria/"+numero;
+			$("#img1").attr("src",cadena+".jpg")
+			contador2++;
+			if(contador2==11)
+			{
+				$("#myModal2").modal("show")
+				clearInterval(interval);
+			}
+	 	}, 5000
 	 	);
 
 
