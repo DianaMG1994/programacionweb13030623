@@ -6,7 +6,7 @@ var numero
 var cadena
 var contador1=0
 var contador2=0
-
+var nombImg=""
 var arreglo=[]
 
 function fobjeto(nombre)
@@ -25,14 +25,29 @@ $(document).ready(
 	 			//$(this).hide("slow");
 	 			//$(this).show("fast");
 
-				$(this).attr('src','frijol.png');
-	 		
-	 			contador1++;
-	 		if(contador1==9)
-	 			{
-	 				$("#myModal1").modal("show")
+				nombImg=$(this).attr("src");
+				
+				if(nombImg.length==5){
+					nombImg=nombImg.substring(0,1);
+				}
+				else{
+					nombImg=nombImg.substring(0,2);
+				}
+	 			try{
+					if(arreglo[nombImg]==1)
+					{
+						$(this).attr("src","frijol.png")
+						contador1++;
+	 					if(contador1==9)
+	 					{
+	 						$("#myModal1").modal("show")
+	 					}
+					}
 
-	 		}
+				}
+				catch(err){
+					
+				}
 	 	}
 	 	);
 	 $("#btn-reinciar").click(
