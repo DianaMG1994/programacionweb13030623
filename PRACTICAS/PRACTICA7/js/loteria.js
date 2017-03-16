@@ -2,20 +2,15 @@
 //.ss4 todos los atributos de  
 /* #ss1 el elemento */
 
-var numero
-var cadena
-var contador1=0
-var contador2=0
-var nombImg=""
-var arreglo=[]
-
-function fobjeto(nombre)
-{
-	return document.getElementById(nombre)
-}
-
 $(document).ready(
 	function(){
+    //declaramos variables
+		var numero
+		var cadena
+		var contador1=0
+		var contador2=0
+		var nombImg=""
+		var arreglo=[]
 	 console.log("HOLA DESDE JQUERY");
 	 //alert ("HOLA DESDE JQUERY");
 	 $("img").click(
