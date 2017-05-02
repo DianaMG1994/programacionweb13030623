@@ -1,55 +1,119 @@
 <?php
-$d= $_GET['Dia'];
+$n= $_GET['nombre'];
+$ap= $_GET['apellidopa'];
+$am= $_GET['apellidoma'];
+$no= $_GET['numcont'];
+$s= $_GET['semestre'];
+$edad= $_GET['edad'];
 
-$m= $_GET['Mes'];
+ 
+ if(preg_match("/^[A-Za-zñáóÑÁÓ]*$/", $n))
+   {
+    echo "La cadena es correcta";
 
-$a= $_GET['Año'];
+   }
+   else
+   {
+      echo "La cadena es incorrecta";
+      
+    }
+//------------//
 
-$arreglodias=array('Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado');
+if(preg_match("/^[A-Za-zñáóÑÁÓ]*$/", $ap))
+   {
+      echo "<br>";
+    echo "La cadena es correcta";
+    
+   }
+   else
+   {
+      echo "<br>";
+      echo "La cadena es incorrecta";
+      
+    }
+   //------------//
 
-if ($m>2)
-{
-	$m=$m-2;
-} 
-elseif($m<=2)
-{
-	$m=$m+10; 
-	$a=$a-1;   
-}	
-
-	$c=$a/100;   
-	$e=$a%100; 
-
-	$b=(13*$m-1)/5+$e/4+$c/4; 
-
-    $f=($b+$e+$d-2*$c)%7; 
-
-$dia=$f;
-echo "dia anterior $arreglodias[$f]";
-echo "<br>";
-if ($f==6) {
-$f=0;
-	# code...
-}else{
-	$f=$f+1;
-}
-echo "Ese dia $arreglodias[$f]";
-$f=$dia;
-echo "<br>";
-if ($f==5) {
-$f=0;
-	# code...
-}else{
-	$f=$f+2;
-}
-
-if ($f==8) {
-$f=1;
-	
-}
-
-echo "El dia siguiente  $arreglodias[$f]";
+if(preg_match("/^[A-Za-zñáóÑÁÓ]*$/", $am))
+   {
+      echo "<br>";
+    echo "La cadena es correcta";
+   
+   }
+   else
+   {
+      echo "<br>";
+      echo "La cadena es incorrecta";
+     
+    }
+    
+//---------------//
+if(preg_match("/^[0-9]*$/", $no))
+   {
+    echo "<br>";
+    echo "La cadena es correcta";
+   
+   }
+   else
+   {
+    echo "<br>";
+       echo "La cadena es incorrecta";
   
+   }
+   //---------------//
+if(preg_match("/^[0-9]*$/", $s))
+   {
+      echo "<br>";
+    echo "La cadena es correcta";
+   
+   }
+   else
+   {
+      echo "<br>";
+    echo "La cadena es incorrecta";
+  
+   }
+
+   //---------------//
+if(preg_match("/^[0-9]*$/", $edad))
+   {
+      echo "<br>";
+    echo "La cadena es correcta";
+    
+   }
+   else
+   {
+      echo "<br>";
+    echo "La cadena es incorrecta";
+    }
+
+    
+  //e-r
+// {
+
+//function verifica_numero($numero)
+  //{
+   //if(preg_match("/^[0-9]*$/", $numero))
+ //  {
+   //	echo "La cadena es correcta";
+   	//return true;
+   //}
+   	//echo "La cadena es incorrecta"
+    //return false;
+  //}
+
+
+  //function verifica_cadena($cadena)
+  //{
+   //if(preg_match("/^[A-Za-z]*$/", $cadena))
+   //{
+   	//echo "La cadena es correcta";
+   	//return true;
+   //}
+   	//echo "La cadena es incorrecta"
+   //return false;
+  //}
+
+ //}
 ?>
 
 <!DOCTYPE html>
